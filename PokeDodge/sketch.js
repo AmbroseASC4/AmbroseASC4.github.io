@@ -12,7 +12,7 @@ function preload() {
   ballImg = loadImage("Pokeball.png");
 }
 function setup() {
-  bg = loadImage("pokebg.png");
+  bg = loadImage("Pokebg.png");
   createCanvas(windowWidth, windowHeight);
   reset();
 }
