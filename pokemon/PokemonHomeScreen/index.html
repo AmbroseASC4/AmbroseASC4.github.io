@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon World</title>
+    <!--Reference platform.js library here-->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!--Reference Client ID in meta tag here-->
+    <meta name="google-signin-client_id" content="816300850354-pbcsha50t57hodk100n9j3um1c31m9pr.apps.googleusercontent.com">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="/pokemonAPI/index.html">Match Finder</a>
+        <a href="/savedPokemon/index.html">My Pokemons</a>
+        <a href="/gamePage/index.html">Games</a>
+    </div>
+    <!-- Use any element to open the sidenav -->
+    <br><button onclick="openNav()"><img class ="threeNav" src="https://image.flaticon.com/icons/png/512/16/16049.png"></button>
+    <div class="centerPage">
+
+        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+        <div id="main">
+
+        </div>
+        <!-- OAUTH -->
+
+        <!--picture-->
+                <div class="userImg">
+                    <img class="userPhoto" img src="http://farazblog.com/theme/logo-404.jpg">
+                </div>
+
+        <div class="Oauth">
+            <div class="signs">
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                <a href="#" class="signOut" onclick="onSignOut();">Sign out</a>
+            </div>
+
+
+            <div class="mainContainer">
+                
+                <!--Text greeting user-->
+                <header>
+                    <h1>WELCOME <span class="userName">(Sign in)</span> TO:</h1>
+                </header>
+                <h1 class="pokeWorld">Pokemon Arcade!</h1>
+
+                <div class='bottom'>
+                    <p>Check out our awesome pokemon theme arcade and pokemon match finder.</P>
+                    <p>Just click the navigation icon on the top left corner of this page.</p>
+                </div>
+
+                <!--Populate section with user data-->
+                <section>
+
+                </section>
+            </div>
+        </div>
+
+</body>
+
+</html>

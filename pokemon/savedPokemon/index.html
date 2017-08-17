@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Poke</title>
+
+    <!--Go to https://console.firebase.google.com-->
+    <!--Sign in and add a project "fireMessage"-->
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCjqAgL20GJMfa3qfWXeSUFXhz2vJ3hZjM",
+            authDomain: "pokematch-c7155.firebaseapp.com",
+            databaseURL: "https://pokematch-c7155.firebaseio.com",
+            projectId: "pokematch-c7155",
+            storageBucket: "pokematch-c7155.appspot.com",
+            messagingSenderId: "830831989659"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+
+
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Alike+Angular|Asul|Eczar" rel="stylesheet">
+
+    <!--custom files-->
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!--=====================================================Navigation Bar==========================================================-->
+    <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/PokemonHomeScreen/index.html">Home</a>
+            <a href="/pokemonAPI/index.html">Match Finder</a>
+            <a href="#">My Pokemons</a>
+            <a href="/gamePage/index.html">Games</a>
+        </div>
+
+    <!-- Use any element to open the sidenav -->
+    <br><button onclick="openNav()"><img class ="threeNav" src="http://2.bp.blogspot.com/-5vekFk8WJaw/V5usAaJnuVI/AAAAAAAADRU/Jql5qUxdINwwtwgHQalga_tnU2YA9smdACLcB/s1600/threelines.png"></button>
+<div class="centerPage">
+        <h1> Pokemon Match Finder </h1>
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+    
+    </div>
+
+    
+
+
+
+
+
+
+
+
+    <!--========================For user to be able to save their pokemon match with a message==========================================-->
+    
+<div class="allMessages" >
+    
+</div>
+
+
+
+</body>
+
+</html>

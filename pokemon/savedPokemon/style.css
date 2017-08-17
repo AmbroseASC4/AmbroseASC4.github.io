@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy|Saira');
+html,body{
+    margin:0;
+    height:100%;
+}
+
+body{
+    background-color: black;
+}
+
+h1{
+    /*GOOGLE FONTS*/
+    /*font-family: 'Asul', sans-serif;*/
+    /*font-family: 'Alike Angular', serif;*/
+    /*font-family: 'Eczar', serif;*/
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 45px;
+    margin:0;
+    color:white;
+    text-align: center;
+}
+
+
+.allMessages{
+    font-family: 'Luckiest Guy', cursive;
+    color:#ffdd00;
+    column-count: 2;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+
+
+input{
+    width:75%;
+}
+
+
+
+.GObutton{
+    position: absolute;
+    bottom: 100px;
+    left: 190px;
+    width:50%;
+    margin: 0 auto;
+}
+
+.GObutton input{
+    width: 100%;
+}
+
+body{
+    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/f3/64/b7/f364b7d0a49566891789d291b8b2e53f.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
+}
+h1{
+    color: #ffdd00;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: blue;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 80px;
+    text-shadow: -5px -5px 4px black;
+}
+.centerPage{
+  position: absolute;
+  right: 275px;
+  border-left: 4px hidden;
+  border-right: 4px hidden;
+  height: 800px;
+  width: 800px;
+  font-family: 'Luckiest Guy', cursive;
+  color: #ffdd00;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: blue;
+  text-align: center;
+}
+
+#pokename{
+    font-family: 'Luckiest Guy', cursive;
+    text-transform: capitalize;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    font-size: 80px;
+}
+#YourPokemon{
+    align-content: center;
+    height:250px;
+    width:250px;
+}
+button {
+    margin-left: 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+#giphy{
+    height: 300px;
+    width: 300px;
+}
+
+
+/*GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Nunito|Rubik|VT323');
+/*font-family: 'Rubik', sans-serif;*/
+/*font-family: 'Inconsolata', monospace;*/
+/*font-family: 'VT323', monospace;*/
+/*font-family: 'Nunito', sans-serif;*/
+
+.signs{
+    text-align: center;
+    background-image: url("../../assets/wall.jpg");
+    background-repeat: repeat;
+    color: white;
+}
+
+.mainContainer{
+    text-align: center;
+    background-image: url("../../assets/wall.jpg");
+    background-repeat: repeat;
+    color: white;
+}
+.sign-in{
+    text-align: center;
+    background-image: url("../../assets/wall.jpg");
+    background-repeat: repeat;
+    color: white;
+}
+
+.userImg{
+    text-align: center;
+    background-image: url("../../assets/wall.jpg");
+    background-repeat: repeat;
+    color: white;
+}
+
+.userData{
+    text-align: center;
+    background-image: url("../../assets/wall.jpg");
+    background-repeat: repeat;
+    color: white;
+}
+
+.h1google{
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    width: 50%;
+    margin: 0 auto 20px auto;    
+}
+span{
+    font-family: 'Inconsolata', monospace;
+    padding-left: 10px;
+}
+
+h2{
+    font-family: 'VT323', monospace;   
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+p{
+   font-family: 'Luckiest Guy', cursive;    
+    margin-top: 5px;
+}
+
+img{
+    border-radius: 50%;
+    width:150px;
+}
+
+.g-signin2{
+    position: absolute;
+    top: 250px;
+    right: 10px;
+}
+
+.signOut{
+    position: absolute;
+    right: 10px;
+    color:white;
+}
+
+.userData{
+    width: 200px;
+    margin: 0 auto;
+}
+
+.userImg{
+    border: 2px solid blanchedalmond;
+    border-radius: 50%;
+    width:150px;
+    height:150px;
+    padding:4px;
+    margin: 0 auto;
+    background-color: rebeccapurple;
+
+    /*Rainbow effect taken from https://codepen.io/nohoid/pen/kIfto*/
+    background: linear-gradient(90deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+    animation: rainbow 18s ease infinite;
+}
+
+
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+.hidden{
+    display: none;
+}
+.connectedjtd9s1iriou3{
+    left:0px
+}
+
+span {
+    padding-left: 0px;
+}
+
+.threeNav{
+    width:30px;
+    height: 30px;
+}
+
+
+/* Nav */
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#pokeAppend{
+    color: white;
+}
+
+#Stats{
+    color: white;
+}

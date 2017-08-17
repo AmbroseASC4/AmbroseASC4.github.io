@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Match Finder</title>
+    <!--Go to https://console.firebase.google.com-->
+    <!--Sign in and add a project "fireMessage"-->
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCjqAgL20GJMfa3qfWXeSUFXhz2vJ3hZjM",
+            authDomain: "pokematch-c7155.firebaseapp.com",
+            databaseURL: "https://pokematch-c7155.firebaseio.com",
+            projectId: "pokematch-c7155",
+            storageBucket: "pokematch-c7155.appspot.com",
+            messagingSenderId: "830831989659"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Alike+Angular|Asul|Eczar" rel="stylesheet">
+    <!--custom files-->
+    <script src="final.js"></script>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <!--=====================================================Navigation Bar==========================================================-->
+    <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/PokemonHomeScreen/index.html">Home</a>
+            <a href="#">Match Finder</a>
+            <a href="/savedPokemon/index.html">My Pokemons</a>
+            <a href="/gamePage/index.html">Games</a>
+        </div>
+    <!-- Use any element to open the sidenav -->
+    <br><button onclick="openNav()" class="navbut"><img class ="threeNav" src="https://image.flaticon.com/icons/png/512/16/16049.png"></button>
+<div class="centerPage">
+        <h1> Pokemon Style Finder </h1>
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+    
+    </div>
+    
+    <!--========================================================Google sign in button================================================-->
+    
+<!--=================================================Functions to make a random pokemon appear================================================-->
+        <div class="buttons">
+            <button onclick="searchPokemon('fire')" style="background-color: orange"> Fire</button>
+            <button onclick="searchPokemon('water')" style="background-color: #0061ff"> Water</button>
+            <button onclick="searchPokemon('flying')" style="background-color:#dcb1f9"> Flying</button><br>
+            <button onclick="searchPokemon('dark')" style="background-color:#633712"> Dark</button>
+            <button onclick="searchPokemon('ground')" style="background-color:#cccc63"> Ground</button>
+            <button onclick="searchPokemon('fairy')" style="background-color:#f95eff"> Fairy</button><br>
+            <button onclick="searchPokemon('normal')" style="background-color:#514b02"> Normal</button>
+            <button onclick="searchPokemon('electric')" style="background-color:#ffeb00"> Electric</button>
+            <button onclick="searchPokemon('psychic')" style="background-color:#c10563"> Psychic</button><br>
+            <button onclick="searchPokemon('ice')" style="background-color:#04d6e5"> Ice</button>
+            <button onclick="searchPokemon('rock')" style="background-color:#917e3b"> Rock</button>
+            <button onclick="searchPokemon('bug')" style="background-color:#8da848"> Bug</button><br>
+            <button onclick="searchPokemon('ghost')" style="background-color:#58457a"> Ghost</button>
+            <button onclick="searchPokemon('fighting')" style="background-color:#9e1f11"> Fighting</button>
+            <button onclick="searchPokemon('poison')" style="background-color:#7e3c96"> Poison</button><br>
+            <button onclick="searchPokemon('dragon')" style="background-color:#5000ba"> Dragon</button>
+            <button onclick="searchPokemon('steel')" style="background-color:#726b7c"> Steel</button>
+            <button onclick="searchPokemon('grass')" style="background-color:#03b71b"> Grass</button>
+        </div>
+        
+                <!-- <p id="name" style="color: red"></p><br> -->
+            <p id="pokename">Bulbasaur</p><br>
+            <p id="urlPoke" style="color: black"></p>
+            <div class="picture">
+            <img id="YourPokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"><br>
+        </div>
+    <!--========================For user to be able to save their pokemon match with a message==========================================-->
+    
+    <div class="userContainer">
+        <form>
+            
+            <div class="GObutton">
+                <button type="reset" onclick="updateDB();" >Submit</button>
+            </div>
+        </form>
+    </div>
+<!--=====================================================Saved Pokemon======================================================-->
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+/* Nav */
+/* The side navigation menu */
+/* body{
+    background-image: url("https://imgmr.com/wp-content/uploads/2016/02/Bulba-Char-Squi-Gameboy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy|Saira');
+body{
+    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/f3/64/b7/f364b7d0a49566891789d291b8b2e53f.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
+}
+.threeNav{
+    width:26px;
+    height:26px;
+}
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+h1{
+    position: absolute;
+    top:-10px; 
+    left:500px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 100px;
+    color: #ffdd00;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: blue;
+}
+h2{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 50px;
+    position: absolute;
+    left: 200px;
+    top: 150px;
+    color:navy;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.invadersImg{
+    position: absolute;
+    top: 370px;
+    left:950px;
+    width: 300px;
+    height: 200px;
+}
+.invadersTitle{
+    position: absolute;
+    left: 1000px;
+    top: 300px;
+    color: #ffdd00;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: blue;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 30px;
+}
+.descrip3{
+    position: absolute;
+    left: 960px;
+    top: 560px;
+    width:300px;
+    color: navy;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 25px;
+}
+.dodgeImg{
+    position: absolute;
+    top: 370px;
+    left:550px;
+    width: 300px;
+    height: 200px;
+}
+.dodgeTitle{
+    position: absolute;
+    left: 620px;
+    top: 300px;
+    color: #ffdd00;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: blue;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 30px;
+}
+.descrip2{
+    position: absolute;
+    left: 560px;
+    top: 560px;
+    width:300px;
+    color: navy;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 25px;
+}
+
+.pongImg{
+    position: absolute;
+    left:150px;
+    top:370px;
+    width: 300px;
+    height: 200px;
+}
+.pongTitle{
+    position: absolute;
+    left: 220px;
+    top: 300px;
+    color: #ffdd00;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: blue;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 30px;
+}
+.descrip1{
+    position: absolute;
+    left: 160px;
+    top: 560px;
+    width:300px;
+    color: navy;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 25px;
+}
