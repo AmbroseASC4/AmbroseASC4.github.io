@@ -9,7 +9,7 @@ var didWin;
 var bg, shipImg, ballImg;
 function preload() {
   shipImg = loadImage("fly.png");
-  ballImg = loadImage("Pokeball.png");
+  ballImg = loadImage("PokeBall.png");
 }
 function setup() {
   bg = loadImage("Pokebg.png");
