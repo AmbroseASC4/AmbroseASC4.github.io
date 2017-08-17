@@ -23,7 +23,7 @@ database.on("child_added", function (rowData) {
 
 
 
-var mainURL = "http://pokeapi.co/api/v2/type/";
+var mainURL = "https://pokeapi.co/api/v2/type/";
 var giphyKey = "d052bee2015b488cbdaae34f0c2b0dbd";
 var giphyAPI = "https://api.giphy.com/v1/" + giphyKey;
 function searchPokemon(userChoice) {
